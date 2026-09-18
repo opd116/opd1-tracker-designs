@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OPD1 Tracker — interface capture</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#0b0e11;--panel:#12171c;--line:#232c34;--ink:#e8eef3;--ink2:#8fa0ac;--ink3:#5f6f7a;--accent:#2fd4a7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 Inter,system-ui,-apple-system,sans-serif;padding:48px 40px 80px}
+.wrap{max-width:1400px;margin:0 auto}
+h1{font-size:30px;font-weight:700;letter-spacing:-.02em}
+h2{font-size:20px;font-weight:600;margin:52px 0 6px;padding-top:26px;border-top:1px solid var(--line)}
+h3{font-size:15px;font-weight:600;color:var(--ink2);margin:26px 0 12px;
+   text-transform:uppercase;letter-spacing:.09em}
+p.lead{color:var(--ink2);max-width:74ch;margin-top:10px}
+.meta{color:var(--ink3);font-size:13px;margin-top:12px}
+.grid{display:grid;gap:16px;margin-top:16px}
+.g5{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.g3{grid-template-columns:repeat(auto-fill,minmax(360px,1fr))}
+figure{background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden}
+figure img{width:100%;display:block;background:#000}
+figcaption{padding:10px 13px;font-size:12.5px;color:var(--ink2);
+           border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+figcaption b{color:var(--ink);font-weight:600}
+.vcard{background:var(--panel);border:1px solid var(--line);border-radius:13px;
+       padding:22px 24px;margin-top:16px}
+.vcard h4{font-size:19px;font-weight:600;letter-spacing:-.01em}
+.vcard p{color:var(--ink2);font-size:14px;margin-top:9px;max-width:88ch}
+.pill{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--accent);border:1px solid rgba(47,212,167,.35);background:rgba(47,212,167,.07);
+      padding:3px 9px;border-radius:20px;margin-top:12px}
+.nav{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.nav a{color:var(--ink);text-decoration:none;font-size:13.5px;border:1px solid var(--line);
+       padding:7px 14px;border-radius:8px;background:var(--panel)}
+.nav a:hover{border-color:var(--accent);color:var(--accent)}
+.bugs{background:#1a1114;border:1px solid #4a2530;border-radius:12px;padding:22px 24px;margin-top:16px}
+.bugs h4{color:#ff8a9b;font-size:16px;font-weight:600}
+.bugs li{color:var(--ink2);font-size:13.5px;margin:10px 0 0 20px}
+.bugs code{background:#0d0f12;border:1px solid #333c45;border-radius:4px;
+           padding:1px 6px;font-size:12.5px;color:#ffd9a0}
+</style></head>
+<body><div class="wrap"><h1>OPD1 Tracker — interface capture</h1>
+<p class="lead">Every screen of the shipped application, captured from the real
+code path against a simulated local Riot client. Each state was verified before
+capture — the engine reports its state, the capture asserts it, and only then
+does it take the shot — so these are the interface as it genuinely renders,
+including states that only appear once a match is found.</p>
+<div class="meta">31 screenshots ·
+1440×900 logical, captured at 2× device scale · EN and AR (right-to-left)</div>
+<div class="nav"><a href="index.html">▸ Shipped app</a><a href="designs.html">Three designs</a><a href="compare.html">Compare by state</a></div><h2>Menus state</h2><div class="grid g5"><figure><img src="../shots/app_menus_live.png" alt="&lt;b&gt;menus&lt;/b&gt; · live tab" loading="lazy"><figcaption><b>menus</b> · live tab</figcaption></figure><figure><img src="../shots/app_menus_performance.png" alt="&lt;b&gt;menus&lt;/b&gt; · performance tab" loading="lazy"><figcaption><b>menus</b> · performance tab</figcaption></figure><figure><img src="../shots/app_menus_encounters.png" alt="&lt;b&gt;menus&lt;/b&gt; · encounters tab" loading="lazy"><figcaption><b>menus</b> · encounters tab</figcaption></figure><figure><img src="../shots/app_menus_saved.png" alt="&lt;b&gt;menus&lt;/b&gt; · saved tab" loading="lazy"><figcaption><b>menus</b> · saved tab</figcaption></figure><figure><img src="../shots/app_menus_settings.png" alt="&lt;b&gt;menus&lt;/b&gt; · settings tab" loading="lazy"><figcaption><b>menus</b> · settings tab</figcaption></figure></div><h2>Lobby state</h2><div class="grid g5"><figure><img src="../shots/app_lobby_live.png" alt="&lt;b&gt;lobby&lt;/b&gt; · live tab" loading="lazy"><figcaption><b>lobby</b> · live tab</figcaption></figure><figure><img src="../shots/app_lobby_performance.png" alt="&lt;b&gt;lobby&lt;/b&gt; · performance tab" loading="lazy"><figcaption><b>lobby</b> · performance tab</figcaption></figure><figure><img src="../shots/app_lobby_encounters.png" alt="&lt;b&gt;lobby&lt;/b&gt; · encounters tab" loading="lazy"><figcaption><b>lobby</b> · encounters tab</figcaption></figure><figure><img src="../shots/app_lobby_saved.png" alt="&lt;b&gt;lobby&lt;/b&gt; · saved tab" loading="lazy"><figcaption><b>lobby</b> · saved tab</figcaption></figure><figure><img src="../shots/app_lobby_settings.png" alt="&lt;b&gt;lobby&lt;/b&gt; · settings tab" loading="lazy"><figcaption><b>lobby</b> · settings tab</figcaption></figure></div><h2>Pregame state</h2><div class="grid g5"><figure><img src="../shots/app_pregame_live.png" alt="&lt;b&gt;pregame&lt;/b&gt; · live tab" loading="lazy"><figcaption><b>pregame</b> · live tab</figcaption></figure><figure><img src="../shots/app_pregame_performance.png" alt="&lt;b&gt;pregame&lt;/b&gt; · performance tab" loading="lazy"><figcaption><b>pregame</b> · performance tab</figcaption></figure><figure><img src="../shots/app_pregame_encounters.png" alt="&lt;b&gt;pregame&lt;/b&gt; · encounters tab" loading="lazy"><figcaption><b>pregame</b> · encounters tab</figcaption></figure><figure><img src="../shots/app_pregame_saved.png" alt="&lt;b&gt;pregame&lt;/b&gt; · saved tab" loading="lazy"><figcaption><b>pregame</b> · saved tab</figcaption></figure><figure><img src="../shots/app_pregame_settings.png" alt="&lt;b&gt;pregame&lt;/b&gt; · settings tab" loading="lazy"><figcaption><b>pregame</b> · settings tab</figcaption></figure></div><h2>Ingame state</h2><div class="grid g5"><figure><img src="../shots/app_ingame_live.png" alt="&lt;b&gt;ingame&lt;/b&gt; · live tab" loading="lazy"><figcaption><b>ingame</b> · live tab</figcaption></figure><figure><img src="../shots/app_ingame_performance.png" alt="&lt;b&gt;ingame&lt;/b&gt; · performance tab" loading="lazy"><figcaption><b>ingame</b> · performance tab</figcaption></figure><figure><img src="../shots/app_ingame_encounters.png" alt="&lt;b&gt;ingame&lt;/b&gt; · encounters tab" loading="lazy"><figcaption><b>ingame</b> · encounters tab</figcaption></figure><figure><img src="../shots/app_ingame_saved.png" alt="&lt;b&gt;ingame&lt;/b&gt; · saved tab" loading="lazy"><figcaption><b>ingame</b> · saved tab</figcaption></figure><figure><img src="../shots/app_ingame_settings.png" alt="&lt;b&gt;ingame&lt;/b&gt; · settings tab" loading="lazy"><figcaption><b>ingame</b> · settings tab</figcaption></figure></div><h2>Offline state</h2><div class="grid g5"><figure><img src="../shots/app_offline_live.png" alt="&lt;b&gt;offline&lt;/b&gt; · live tab" loading="lazy"><figcaption><b>offline</b> · live tab</figcaption></figure><figure><img src="../shots/app_offline_performance.png" alt="&lt;b&gt;offline&lt;/b&gt; · performance tab" loading="lazy"><figcaption><b>offline</b> · performance tab</figcaption></figure><figure><img src="../shots/app_offline_encounters.png" alt="&lt;b&gt;offline&lt;/b&gt; · encounters tab" loading="lazy"><figcaption><b>offline</b> · encounters tab</figcaption></figure><figure><img src="../shots/app_offline_saved.png" alt="&lt;b&gt;offline&lt;/b&gt; · saved tab" loading="lazy"><figcaption><b>offline</b> · saved tab</figcaption></figure><figure><img src="../shots/app_offline_settings.png" alt="&lt;b&gt;offline&lt;/b&gt; · settings tab" loading="lazy"><figcaption><b>offline</b> · settings tab</figcaption></figure></div><h2>Player drawer</h2><div class='grid g3'><figure><img src="../shots/drawer_ingame_player_profile.png" alt="In-match · player profile drawer" loading="lazy"><figcaption>In-match · player profile drawer</figcaption></figure></div><h2>Arabic, right-to-left</h2>
+<p class="lead">The layout mirrors: the tab strip, the score line and the row
+order all flip. Numerals stay Western because that is what the game itself
+shows.</p><div class='grid g5'><figure><img src="../shots/arabic_ingame_live.png" alt="&lt;b&gt;AR / RTL&lt;/b&gt; · live tab" loading="lazy"><figcaption><b>AR / RTL</b> · live tab</figcaption></figure><figure><img src="../shots/arabic_ingame_performance.png" alt="&lt;b&gt;AR / RTL&lt;/b&gt; · performance tab" loading="lazy"><figcaption><b>AR / RTL</b> · performance tab</figcaption></figure><figure><img src="../shots/arabic_ingame_encounters.png" alt="&lt;b&gt;AR / RTL&lt;/b&gt; · encounters tab" loading="lazy"><figcaption><b>AR / RTL</b> · encounters tab</figcaption></figure><figure><img src="../shots/arabic_ingame_settings.png" alt="&lt;b&gt;AR / RTL&lt;/b&gt; · settings tab" loading="lazy"><figcaption><b>AR / RTL</b> · settings tab</figcaption></figure><figure><img src="../shots/arabic_drawer_player_profile.png" alt="&lt;b&gt;AR / RTL&lt;/b&gt; · player drawer" loading="lazy"><figcaption><b>AR / RTL</b> · player drawer</figcaption></figure></div><h2>What exercising every state found</h2>
+<div class="bugs">
+<h4>Two defects the happy path hides</h4>
+<ul>
+<li><code>RiotLocalClient.__init__</code> leaves <code>self.puuid</code> empty and only
+populates it inside <code>headers()</code>. The production path
+(<code>MatchEngine.live_board</code>) reads presences before anything calls
+<code>headers()</code>, so the self-presence never matches and the board can
+resolve to <code>MENUS</code> even while the player is in a match. The existing
+suite misses it because the fakes set <code>puuid</code> in
+<code>__init__</code>.</li>
+<li><code>queue_label("")</code> returns <code>"Custom"</code> and an empty map path
+resolves to <code>"Unknown"</code>, so the lobby renders a queue and a map that do
+not exist. Visible in the lobby captures above.</li>
+</ul>
+</div></div></body></html>
